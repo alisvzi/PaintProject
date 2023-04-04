@@ -1,4 +1,4 @@
-# 🎨 Paint project
+# 🎨 Paint 
 
 - A simple and cute painting tools
 - Right to left writing mode. Designed with Persian language
