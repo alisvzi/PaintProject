@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("Round-Dots/fonts/webfonts/Vazirmatn-RD[wght].woff2")
+      format("woff2 supports variations"),
+    url("Round-Dots/fonts/webfonts/Vazirmatn-RD[wght].woff2")
+      format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazirmatn, sans-serif;
+}
+body {
+  background: #1488cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+}
+.tools-area {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0 15px;
+  background-color: #ffffff9a;
+  border-radius: 10px 10px 0 0;
+  color: #1c1e5c;
+}
+.tools {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools .color {
+  display: flex;
+  align-items: center;
+}
+.tools .color i {
+  margin: 0 3px;
+}
+
+input[type="color"] {
+  border: none;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 5px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.buttons button {
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons .save {
+  background: #1488cc;
+  color: #fff;
+}
+
+.buttons .clear:hover {
+  background-color: lightgray;
+}
+
+.draw-area canvas {
+  width: 100%;
+  height: 450px;
+  border-radius: 0 0 10px 10px;
+}
+.active {
+  color: #1488cc;
+}
+
+footer {
+  border-top: 5px solid rgba(78, 71, 83, 0.473);
+  border-radius: 50px 50px 0 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #ffffff5d;
+  box-shadow: 0px -2px 20px 1px rgba(68, 26, 26, 0.527);
+}
+footer {
+  color: #2b32b2;
+  transition: 0.2s;
+}
+footer .logo,
+.name {
+  font-size: 26px;
+  font-weight: 400;
+}
